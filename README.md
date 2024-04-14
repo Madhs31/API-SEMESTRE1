@@ -1,45 +1,40 @@
 Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Aprendizado por Projeto Integrado (API)
-# EQUIPE ADALOVE
-Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos estudantes envolvidos;
+
+<img src="/assets/img/Apresentação.jpg">
+
+# Equipe:
+<img src="/assets/img/Scrum Team.jpg">
+
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
+* [Cliente](#cliente)
+* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
 * [Backlog do produto](#Backlog-do-produto)
-* [Competências desenvolvidas](#competências-desenvolvidas)
 * [Autores](#autores)
 
 # Cronograma:
-Projeto pedagógico alicerçado na Metodologia API para ensino-aprendizado focado no desenvolvimento de competências e fundamentada nos pilares de aprendizado com problemas reais (RPBL), validação externa e mentalidade ágil. 
-Uso de estratégias para entender o problema, conceber uma solução viável ao desenvolver e implementar o MVP seguido de sua operação (CDIO). 
-Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da Fatec SJC com definição das datas do kickoff e das sprints
-
-Sprint | Previsão | Status|
-|------|--------|------|
-|Kick Off | dd/mm/aaaa | concluido|
-|01 | dd/mm/aaaa | concluido|
-|02|  dd/mm/aaaa| em progresso |
-|03| dd/mm/aaaa | a fazer|
-|04| dd/mm/aaaa |a fazer |
-|Feira de Soluções|dd/mm/aaaa |a fazer |
+<img src="/assets/img/Cronograma.jpg">
 
 
-# Objetivo do Projeto
-Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil (Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a
-aplicação com EXEMPLOS PRÁTICOS para a plena compreensão do usuário do sistema.
-Deverá criar um formulário para avaliações parciais e final (com totalização).
-O Sistema deve primordialmente ter foco na disseminação dos processos para que os usuários
-possam replicar todos os passos em futuros desenvolvimentos.
-A prioridade secundária será a compreensão de habilidades (Skills) importantes para um
-profissional de tecnologia da informação.
-Todo o material de conhecimento publicado no sistema deverá ter forma indireta (Conhecimento adquirido e repassado pelos desenvolvedores).
-Bem como toda a documentação de desenvolvimento deverá ser lastreado no GitHub com todos os processos necessários para a fidelização do cliente.
+# Objetivo do Projeto:
+<img src="/assets/img/Objetivo.jpg">
 
-# Funcionalidades e registros (vídeos e apresentações) das sprints
+<img src="/assets/img/Apresentação.jpg">
 
-Apresentação das funcionalidades
-Confira a seguir uma demonstraão das funcionalidades para cada tipo de usuário do sistema:
+
+# Cliente:
+<img src="/assets/img/Requisito.jpg">
+
+# Funcionalidades e registros das sprints:
+
+## Protótipo Figma:
+<img src="/assets/img/Telas.jpg">
+
+
+## Apresentação das funcionalidades:
+Demonstraão das funcionalidades para cada tipo de usuário do sistema:
 
 Adicionar video e documentos nessa seção
 
@@ -56,25 +51,23 @@ Adicionar video e documentos nessa seção
 
 # Backlog do produto
 
-## Sprint 1. Concepção
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+## Sprint 1.
+- [x] Levantamento de requisitos;
+- [x] Identificar os elementos principais;
+- [x] Esboçar o layout;
+- [x] Escolher cores e fontes;
+- [x] Desenvolver o design no figma;
+- [x] Iniciar o front-end;
+- [x] Elaborar a base do conteúdo apresentado no site.
 
-## Sprint 2. Desenvolvimento do Projeto
+## Sprint 2
 - [ ] Documento passo a passo;
 - [ ] Vídeo passo a passo;
 - [ ] Treinamento com os professores;
 - [ ] Treinamento com os alunos;
 - [ ] Monitoramento e ajustes.
       
-## Sprint 3 . Implementação
+## Sprint 3
 - [x] Defina o propósito do template;
 - [x] Identifique os elementos principais;
 - [x] Esboce o layout;
@@ -85,7 +78,7 @@ Adicionar video e documentos nessa seção
 - [ ] Criação do vídeo;
 - [ ] Finalize e aprovação.
       
-## Sprint 4. Operacionalização
+## Sprint 4
 - [x] Defina o propósito do template;
 - [x] Identifique os elementos principais;
 - [x] Esboce o layout;
@@ -110,7 +103,7 @@ Adicionar video e documentos nessa seção
 | GitHub | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
 | Gestão de Projetos | ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
 | Scrum Master | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Prodct Owner | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+| Product Owner | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
 | Markdown | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
 | Git Projects | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
  
@@ -132,14 +125,15 @@ Adicionar video e documentos nessa seção
 </details>
 
 # Autores
-|    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
+|    Função     | Nome                                  |                                                                                                                                                      GitHub                                                                                                                                                               |
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Product Owner |   Jean Carlos         |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcosoliveiraa) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoM-py)              |
-| Scrum Master  | Pessoa 2 |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/mariagabrielareis/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/MariaGabrielaReis)     |
-| Team Member   | Pessoa 3              |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/antonio-nepomuceno-04943720a/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Nepoun)        |
-|  Team Member  | Pessoa 4                 |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/caio-vitor-c1/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/CaioVitorDias1)        |
-|  Team Member  | Pessoa 5                 |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-camargo-915452196/) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/GabrielCamargoL)   |
-|  Team Member  | Pessoa 6       |           [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gioliveirass) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gioliveirass)          |
+| Product Owner |   Angelina Borroni         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/borroniff)              |
+| Scrum Master  | Celso Rocha |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/celsick)     |
+|  Team Member  | João Pedro Cava                 |   [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoPedroCava)   |
+| Team Member   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
+|  Team Member  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
+|  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
+|  Team Member  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
 
 # MATERIAL DE ESTUDO: GIT
 aula do Jean: https://youtu.be/Vas_8Bwm9JI?si=xWWV85zk0K7QCoXa
