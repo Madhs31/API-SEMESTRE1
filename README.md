@@ -4,125 +4,75 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
-<img src="/assets/img/Scrum Team.jpg">
+<img src="/assets/img/Scrum Team (2).jpg">
+
 
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
 * [Cliente](#cliente)
+* [Cronograma](#cronograma)
+* [Backlog do produto](#backlog-do-produto)
+* [Protótipo - Figma](#prototipo)
+* [Burndown Chart](#burndown)
+* [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
-* [Backlog do produto](#Backlog-do-produto)
 * [Autores](#autores)
-
-# Cronograma:
-<img src="/assets/img/Cronograma.jpg">
-
 
 # Objetivo do Projeto:
 <img src="/assets/img/Objetivo.jpg">
 
-<img src="/assets/img/Apresentação.jpg">
-
-
 # Cliente:
 <img src="/assets/img/Requisito.jpg">
 
-# Funcionalidades e registros das sprints:
 
-## Protótipo Figma:
-<img src="/assets/img/Telas.jpg">
+# Cronograma:
+<img src="/assets/img/Cronograma.jpg">
 
-
-## Apresentação das funcionalidades:
-Demonstraão das funcionalidades para cada tipo de usuário do sistema:
-
-Adicionar video e documentos nessa seção
-
-[![Nome do Vídeo](https://img.youtube.com/vi/pBy1zgt0XPc/0.jpg)](https://www.youtube.com/embed/pBy1zgt0XPc)
-
-## Tecnologias Utilizadas
-
-* Jira Software
-* Power BI
-* Microsoft Excel
-* Slack
-
-
+##
 
 # Backlog do produto
+<img src="/assets/img/sprintsI.jpg">
 
-## Sprint 1.
-- [x] Levantamento de requisitos;
-- [x] Identificar os elementos principais;
-- [x] Esboçar o layout;
-- [x] Escolher cores e fontes;
-- [x] Desenvolver o design no figma;
-- [x] Iniciar o front-end;
-- [x] Elaborar a base do conteúdo apresentado no site.
+<img src="/assets/img/sprints.jpg">
 
 ## Sprint 2
-- [ ] Documento passo a passo;
-- [ ] Vídeo passo a passo;
-- [ ] Treinamento com os professores;
-- [ ] Treinamento com os alunos;
-- [ ] Monitoramento e ajustes.
+- [ ] Aprimoramento do HTML/CSS;
+- [ ] Aprimoramento do conteudo didático apresentado no site.
       
 ## Sprint 3
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+- [ ] Correções de possíveis bugs;
+- [ ] Finalização do site.
       
 ## Sprint 4
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+- [ ] -----------------------------
+
+##
 
 
+# Protótipo Figma:
+<img src="/assets/img/Telas.jpg">
 
-  
-# Competências desenvolvidas
+##
 
-## Hard Skill (saber tecnológico)
-<details>
-<summary>Hard Skills desenvolvidas</summary>
-  
-| Tecnologia/Metodologia | Classificação |
-| ---------------------- | ------------- |
-| GitHub | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Gestão de Projetos | ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
-| Scrum Master | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Product Owner | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Markdown | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Git Projects | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
- 
-</details>
 
-## Soft Skill (saber comportamental)
-<details>
-<summary>Soft Skills desenvolvidas</summary>
+# Burndown Chart:
+<img src="/assets/img/Burndown.jpg">
 
-| Habilidades | Classificação |
-| ---------------------- | ------------- |
-| Colaboração | ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ ☆ |
-| Proatividade| ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ ☆ |
-| Pensamento Crítico | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Gerenciamento de Tempo | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Adaptabilidade | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
-| Resiliência | ★ ★ ★ ★ ★ ★ ★ ☆ ☆ ☆ |
+##
 
-</details>
+# Tecnologias Utilizadas:
+<img src="/assets/img/Ferramentas.jpg">
+
+# Funcionalidades e registros das sprints:
+## Apresentação das funcionalidades:
+Demonstração das funcionalidades na página HTML:      
+
+https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
+
+##
+
+<img src="/assets/img/Agradecimento.jpg">
 
 # Autores
 |    Função     | Nome                                  |                                                                                                                                                      GitHub                                                                                                                                                               |
@@ -135,9 +85,3 @@ Adicionar video e documentos nessa seção
 |  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
 |  Team Member  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
 
-# MATERIAL DE ESTUDO: GIT
-aula do Jean: https://youtu.be/Vas_8Bwm9JI?si=xWWV85zk0K7QCoXa
-
-instalação e configuração do git no windows 11: https://youtu.be/AdzKzlp66sQ?si=KPMDzuw7G9uX4NX8
-
-pull request: https://www.freecodecamp.org/portuguese/news/como-fazer-o-seu-primeiro-pull-request-no-github/
