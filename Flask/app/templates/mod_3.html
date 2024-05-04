@@ -1,0 +1,234 @@
+{% extends 'base.html' %}
+
+{% block title %}Módulo 3{% endblock %}
+
+{% block styles %}
+        <style>
+            body{
+                justify-content: space-around;
+                margin: 0%;
+                margin-bottom: 0%;
+                font-family: 'Alatsi',  sans-serif;
+                background-color: #C8C8C8;
+            }
+
+            #menu ul{
+                background-color: #32363f;
+                list-style: none;
+            }
+
+            #menu{ 
+                padding: 52px 25px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                justify-content: space-around;
+            }
+
+            #menu ul li a{ 
+                padding: 30px 10px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                font-family: "Poppins", sans-serif;
+            }
+
+            #menu ul li{
+                left: 31pc;
+                display: inline;
+                padding: 13px
+            } 
+
+            .img{
+                justify-content: space-around;
+                display: flex;
+                float:right ;
+                margin: 0 10px 10px 0;
+                position: absolute;
+                top: 04pc;
+                right: 3pc;
+            }
+
+            .div2{
+                display: flex;
+                width: 91,5pc;
+                display: flex;
+                border-top: 10vh solid #32363F;
+                border-left: 9vh solid #32363F;
+                height: 45vh;    background-color: #32363F;
+                margin-bottom: -94px;
+
+            }
+
+            footer{
+                display: flex;
+                background-color: #32363f;
+                height: 30vh;
+            }
+
+            .footer-custom{
+                margin: auto 9vh;
+                font-family: "Poppins", sans-serif;
+                color: #C8C8C8;
+                background-color: #32363f;
+                height: 18vh;
+                padding: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between
+            }
+
+            .divtext{
+                margin-top: -3pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: justify;
+            }
+            .funcoes{
+                margin-top: 6pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 80px;
+                text-align: justify;
+            }
+            p{
+                line-height: 1.5;
+                text-indent: 50px;
+            }
+            .pp{
+                line-height: 1.5;
+                text-indent: 80px;
+            }
+            .pp2{
+                line-height: 1.5;
+                text-indent: 100px;
+            }
+            .ppp{
+                line-height: 1.5;
+                text-indent: 120px;
+            }
+            .ppp2{
+                line-height: 1.5;
+                text-indent: 140px;
+            }
+            .imag{
+                width: 45%;
+                height: 45%;
+                margin-top: -10pc;
+                margin-bottom: -5pc;
+                margin-left: 350px;
+                margin-right: 350px;
+            }
+
+            .imgm{
+                width: 45%;
+                height: 45%;
+                margin-top: -2%;
+                margin-bottom: 2%;
+                margin-left: 350px;
+                margin-right: 350px;
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 #1c1e21;
+                transition: 0.3s;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .card:hover {
+                box-shadow: 0 8px 16px 0 #1c1e21;
+            }
+            .container {
+                background-color: #32363F;
+                padding: 2px 16px;
+            }
+            .button {
+                background-color: #32363F;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button:hover {opacity: 1}
+
+            .button2 {
+                background-color: #32363F;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button2:hover {opacity: 1}
+            
+        </style>
+{% endblock %}
+
+{% block content %}
+        <div class="div2">
+            <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="500px" height="500" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. Responsabilidades <br> e Papéis</font></h1>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+
+        <!-- curso -->
+
+        <div class="divtext">
+            <h1> Time SCRUM </h1>
+                <h3 class="h3"> Definição </h3>
+                    <p>Em uma equipe Scrum, existem funções específicas, mas não são posições fixas. Isso significa que as pessoas podem desempenhar diferentes papéis em momentos diferentes. Por exemplo, alguém pode ser o 'Product Owner' em um projeto e depois assumir o papel de 'Scrum Master' em outro. As equipes Scrum são autogerenciadas, o que significa que elas decidem como realizar o trabalho sem precisar de supervisão constante. Elas também são versáteis e têm todas as habilidades necessárias para realizar as tarefas, o que significa que não dependem de recursos externos. Esse modelo foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes.</p>
+            <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
+        <br>
+        <br>
+        <h1> Product Owner (P.O.) </h1>
+            <p> O trabalho do Product Owner é fundamental para garantir o sucesso de um produto. Ele é responsável por várias tarefas importantes:</p>
+        <br>
+            <P class="pp"><strong> 1. Gerenciar o Product Backlog: </strong></P> 
+               <p class="pp2">Isso significa manter uma lista de todas as coisas que precisam ser feitas no produto e garantir que estejam organizadas da maneira mais útil.</p>
+        <br>
+            <P class="pp"><strong> 2. Garantir o ROI (Retorno sobre o Investimento): </strong></P> 
+               <p class="pp2">O Product Owner precisa garantir que as funcionalidades desenvolvidas tragam valor ao produto e, consequentemente, à empresa.</p>
+        <br>
+            <P class="pp"><strong> 3. Definir a visão do produto: </strong></P> 
+               <p class="pp2">É importante que o Product Owner tenha uma compreensão clara de como o produto deve ser e transmita essa visão à equipe.</p>
+        <br>
+            <P class="pp"><strong> 4. Gerenciar Novos Requisitos: </strong></P> 
+               <p class="pp2">À medida que novas ideias surgem, o Product Owner decide se e quando elas devem ser adicionadas ao trabalho a ser feito.</p>
+        <br>
+            <P class="pp"><strong> 5. Determinar a ordem de prioridade: </strong></P> 
+               <p class="pp2">Ele decide qual funcionalidade é mais importante e deve ser implementada primeiro.</p>
+        <br>  
+            <P class="pp"><strong> 6.Supervisionar o plano de lançamentos: </strong></P> 
+               <p class="pp2">O Product Owner acompanha o progresso do desenvolvimento e decide quando novas versões do produto serão lançadas.</p>
+        <br>  
+            <P class="pp"><strong> 7. Aceitar ou Rejeitar o Trabalho Concluído: </strong></P> 
+               <p class="pp2">No final de cada ciclo de trabalho, o Product Owner decide se está de acordo com as expectativas e se pode ser entregue aos usuários finais.</p>
+        <br>  
+            <P class="pp"><strong> 8. Validação das sprints: </strong></P> 
+               <p class="pp2">Somente o Product Owner tem a autoridade para cancelar uma Sprint, embora essa não deva ser uma ação frequente, pois pode afetar negativamente o trabalho da equipe. Isso pode acontecer se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou em outras circunstâncias.</p>
+        <br>
+            <p>É importante destacar que o sucesso do produto depende em grande parte das habilidades do Product Owner em entender as necessidades do mercado e do negócio, além de comunicar de forma eficaz essas informações à equipe Scrum. Além disso, mesmo que uma empresa possa ter um comitê para identificar novas funcionalidades, é recomendado que haja apenas um Product Owner para tomar decisões sobre o Product Backlog. </p>
+        </div>
+        <br>    
+        <div>
+            <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imgm">
+        </div>
+
+{% endblock %}
