@@ -19,29 +19,29 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Autores](#autores)
 
 # Objetivo do Projeto:
-<img src="/assets/img/Sprint 1/Objetivo.jpg">
+<img src="/assets/img/Sprint 2/Objetivo.jpg">
 
 # Cliente:
-<img src="/assets/img/Sprint 1/Requisitos.jpg">
+<img src="/assets/img/Sprint 2/Requisito.jpg">
 
 
 # Cronograma:
-<img src="/assets/img/Sprint 1/Cronograma.jpg">
+<img src="/assets/img/Sprint 2/Cronograma.jpg">
 
 ##
 
 # Backlog do produto
-<img src="/assets/img/Sprint 1/Backlog.jpg">
+<img src="/assets/img/Sprint 2/Product Backlog.jpg">
+<img src="/assets/img/Sprint 2/Product BacklogII.jpg">
 
 # Sprints
-<img src="/assets/img/Sprint 1/Sprint ProgressI.jpg">
-<img src="/assets/img/Sprint 1/Sprint ProgressII.jpg">
+<img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
 
-## Sprint 2
-- [X] Aprimoramento do HTML/CSS;
-- [X] Aprimoramento do conteudo didático apresentado no site.
-      
-## Sprint 3
+## Sprint Roadmap 
+<img src="/assets/img/Sprint 2/SprintII.jpg">
+
+
+## Sprint 3 (atual)
 - [ ] Correções de possíveis bugs;
 - [ ] Finalização do site.
       
@@ -53,13 +53,16 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ##
 
 # Tecnologias Utilizadas:
-<img src="/assets/img/Ferramentas.jpg">
+<img src="/assets/img/Sprint 2/Ferramentas.jpg">
 
 # Funcionalidades e registros das sprints:
 ## Apresentação das funcionalidades:
-Demonstração das funcionalidades na página HTML:      
+Demonstração das funcionalidades na página HTML:
 
-https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
+Link no YouTube: https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA
+
+https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/710fb5dd-55c8-4d25-ab05-1b4e1856e436
+
 
 ##
 
