@@ -4,164 +4,219 @@
 
 {% block styles %}
         <style>
-            body{
-                justify-content: space-around;
-                margin: 0%;
-                margin-bottom: 0%;
-                font-family: 'Alatsi',  sans-serif;
-                background-color: #C8C8C8;
-            }
+            body {
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: "Alatsi", sans-serif;
+        background-color: #c8c8c8;
+    }
 
-            #menu ul{
+    .divtext {
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes {
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3 {
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p {
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp {
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2 {
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp {
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2 {
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag {
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard {
+        background-color: #32363f;
+        padding: 2px 16px;
+    }
+    .btn.btn-lg.btn-dark{
+        background-color:#32363F;
+    }
+    .btn.btn-lg.btn-dark:hover{
+        background-color: #464c5c;
+    }
+    .d-grid.gap-2.d-md-flex{
+        justify-content: space-between;
+    }
+    .btn.my-5{
+        font-size: larger;
+    }
+    .btncelso:hover{
+        color: #464c5c;
+    }
+
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+    }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-custom{
+                height: 50vh;
                 background-color: #32363f;
-                list-style: none;
             }
-
-            #menu{ 
-                padding: 52px 25px; 
-                background-color:#32363f; 
-                color: #32363f; 
-                justify-content: space-around;
+            .title-mod{
+                margin: 30px 50px;
+                color: #D6D6D6;
+                
             }
-
-            #menu ul li a{ 
-                padding: 30px 10px; 
-                background-color:#32363f; 
-                color: #32363f; 
-                font-family: "Poppins", sans-serif;
+            .title-mod h1{
+                font-size: 120px;
             }
-
-            #menu ul li{
-                left: 31pc;
-                display: inline;
-                padding: 13px
-            } 
 
             .img{
-                justify-content: space-around;
-                display: flex;
-                float:right ;
-                margin: 0 10px 10px 0;
-                position: absolute;
-                top: 04pc;
-                right: 7pc;
+                width: 500px;
+                height: auto;
             }
 
-            .div2{
-                display: flex;
-                width: 91,5pc;
-                display: flex;
-                border-top: 10vh solid #32363F;
-                border-left: 9vh solid #32363F;
-                height: 45vh;    background-color: #32363F;
-                margin-bottom: -94px;
-
+            @media (max-width:575.98px){
+                .title-mod h1{
+                    font-size: 40px;
+                }
+                .img{
+                    width: 335px;
+                    height: auto;
+                }
+                .imag{
+                    width: 290px;
+                    height: auto;
+                }
             }
 
-            footer{
-                background-color: #32363f;
-                height: 30vh;
+            @media (min-width: 576px) and (max-width: 767.98px){
+                .img{
+                    width: 350px;
+                    height: auto;
+                }
             }
 
-            .footer-custom{ 
-                font-family: "Poppins", sans-serif;
-                color: #C8C8C8;
-                background-color: #32363f;
-                height: 18vh;
-                padding: 20px;
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between
+            @media (min-width: 768px) and (max-width: 991.98px){
+                .img{
+                    width: 400px;
+                    height: auto;
+                }
             }
 
-            .divtext{
-                margin-top: -3pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                text-align: justify;
+            @media (min-width: 992px) and (max-width: 1224.98px){
+                .img{
+                    width: 400px;
+                    height: auto;
+                }
             }
-            .funcoes{
-                margin-top: 6pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                margin-bottom: 80px;
-                text-align: justify;
-            }
-            p{
-                line-height: 1.5;
-                text-indent: 50px;
-            }
-            .pp{
-                line-height: 1.5;
-                text-indent: 80px;
-            }
-            .pp2{
-                line-height: 1.5;
-                text-indent: 100px;
-            }
-            .ppp{
-                line-height: 1.5;
-                text-indent: 120px;
-            }
-            .ppp2{
-                line-height: 1.5;
-                text-indent: 140px;
-            }
-            .imag{
-                width: 45%;
-                height: 45%;
-                margin-left: 30%;
-                margin-right: 30%;;
-            }
-            .cardcard {
-                box-shadow: 0 4px 8px 0 #1c1e21;
-                transition: 0.3s;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-            }
+            
+            .dropdown .btn-dark {
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
 
-            .cardcard:hover {
-                box-shadow: 0 8px 16px 0 #1c1e21;
-            }
-            .containercard {
-                background-color: #32363F;
-                padding: 2px 16px;
-            }
-            .btn.btn-lg.btn-dark{
-                background-color:#32363F;
-            }
-            .btn.btn-lg.btn-dark:hover{
-                background-color: #464c5c;
-            }
-            .d-grid.gap-2.d-md-flex{
-                justify-content: space-between;
-            }
-            .btn.my-5{
-                font-size: larger;
-            }
-            .btnrenan:hover{
-                color: #464c5c;
-            }
+        .dropdown-menu {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #343a40;
+            color: #fff;
+        }
         </style>
 {% endblock %}
 
 {% block content %}
-        <div class="div2">
-            <img src="{{ url_for('static', filename='/imgs/capa_mod7.png') }}" width="400px" height="400" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 6. APÊNDICE</font></h1>
+<div class="container-fluid container-custom position-relative">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+            <div class="title-mod">
+                <h1>6. Apêndice</h1>
+            </div>
         </div>
+        <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
+            <img src="{{ url_for('static', filename='imgs/capa_mod7.png') }}" class="img" alt="Imagem do módulo">
+        </div>
+        
+    </div>
+</div>
         <div class="wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         </div>
 
-        <!-- curso -->
+        <!-- Sumário -->
+
+        <div class="containerd my-4">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>  Sumário
+                </button>
+                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                    <h2 class="dropdown-header">Tópicos</h2>
+                    <li><a class="dropdown-item" href="#item-1">Auto-Organização</a></li>
+                    <li><a class="dropdown-item" href="#item-2">Facilitação</a></li>
+                    <li><a class="dropdown-item" href="#item-3">Visão</a></li>
+                    <li><a class="dropdown-item" href="#item-4">User Stories</a></li>
+                </ul>
+            </div>
+        </div>
+        
 
         <div class="divtext">
 
         <!--Auto Organização-->
-
-            <h1> Auto-Organização </h1>
+            <br>
+            <br>
+            <h1 id="item-1"> Auto-Organização </h1>
             <P><strong> 1. Importância da Auto-Organização no Scrum: </strong></P> 
                 <p class="pp">Na gestão de projetos ágeis, como no Scrum, a auto-organização é um princípio essencial que impulsiona a autonomia e a eficiência das equipes. Neste capítulo, exploraremos como a auto-organização se torna a espinha dorsal de equipes ágeis bem-sucedidas, promovendo um ambiente de trabalho colaborativo e orientado para resultados.</p>
         <br>
@@ -217,13 +272,15 @@
                 </div>
             </div>
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/auto_org.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
         <!--Facilitação-->
 
-            <h1> Facilitação </h1>
+            <h1 id="item-2"> Facilitação </h1>
                 <p>
                     No contexto ágil, o Scrum Master desempenha um papel crucial como facilitador, atuando como um catalisador para as ideias que surgem dentro da equipe. Nesta seção, exploraremos como o Scrum Master busca otimizar processos, reduzir conflitos e motivar a equipe, promovendo um ambiente colaborativo e orientado para resultados.
                 </p>
@@ -248,13 +305,15 @@
                     O Scrum Master também desempenha um papel importante na motivação da equipe e no fomento do engajamento. Ele reconhece e celebra as conquistas da equipe, proporcionando feedback positivo e incentivando o desenvolvimento pessoal e profissional dos membros da equipe. Além disso, o Scrum Master promove um ambiente de trabalho inclusivo e estimulante, onde todos se sintam valorizados e empoderados para contribuir para o sucesso do projeto.
                 </p>            
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/facilitador.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
         <!--Visão-->
 
-            <h1> Visão </h1>
+            <h1 id="item-3"> Visão </h1>
                 <p>
                     A visão do produto, transmitida pelo Product Owner (P.O), desempenha um papel crucial no desenvolvimento ágil, permitindo que ele transfira o direcionamento do projeto para a equipe. Nesta seção, exploraremos como a visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto, promovendo uma compreensão compartilhada e um alinhamento eficaz.
                 </p>
@@ -279,13 +338,15 @@
                     Ao transmitir a visão do produto, o Product Owner promove uma compreensão compartilhada entre os membros da equipe. Todos têm uma visão clara do que estão trabalhando para alcançar e por que é importante. Isso ajuda a alinhar as atividades da equipe com os objetivos do projeto e a garantir que todos estejam trabalhando na mesma direção.
                 </p>            
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
         <!--User Stoires-->
 
-        <h1> User Stories </h1>
+        <h1 id="item-4"> User Stories </h1>
             <p>
                 User Stories são elementos cruciais no Product Backlog em metodologias ágeis, como o Scrum. Nesta seção, vamos explorar o significado das User Stories, sua criação e sua importância para o sucesso do projeto.
             </p>
@@ -346,21 +407,25 @@
         </div>   
     <br>  
     <br>
+    <div class="divimag">
         <img src="{{ url_for('static', filename='/imgs/user_storie.png') }}" class="imag">
+    </div>
     <br>
     <br>
         <hr>
         <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
+        <!-- Test Your Knowledge Button -->
+<div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+    <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
+</div>
+<br>
+<br>
+
+<!-- Navigation Buttons -->
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+    <a class="btn btn-primary my-5" href="/mod_5"><strong>← Módulo anterior</strong></a>
+    <a class="btn btn-primary my-5" href="/mod_7"><strong>Próximo módulo →</strong></a>
+</div> 
         </div>
-        <br>
-        <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btnrenan" href="/mod_5"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btnrenan" href="/mod_7"><i><strong>Próximo módulo →</strong></i></a>
-            </div>
-        </div> 
         </div>
 {% endblock %}
