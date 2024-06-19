@@ -1,6 +1,3 @@
-Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
-## Aprendizado por Projeto Integrado (API)
-
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
@@ -18,17 +15,18 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Protótipo - Figma](#prototipo)
 * [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
+* [Manual de instalação](#manual)
 * [Autores](#autores)
 
 # Objetivo do Projeto:
-<img src="/assets/img/Sprint 2/Objetivo.jpg">
+<img src="/assets/img/Objetivo.jpg">
 
 # Cliente:
-<img src="/assets/img/Sprint 2/Requisito.jpg">
+<img src="/assets/img/Requisito.jpg">
 
 
 # Cronograma:
-<img src="/assets/img/Sprint III/Cronograma.jpg">
+<img src="/assets/img/Sprint IV/Cronograma.jpg">
 
 ##
 
@@ -39,26 +37,16 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 # Sprints Backlog
 <img src="/assets/img/Sprint 1/Sprint Backlog.jpg">
-<img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
+<img src="/assets/img/Sprint II/Sprint 2 Backlog.jpg">
 <img src="/assets/img/Sprint III/Sprint Backlog3.jpg">
-🔒 SPRINT 4 
+<img src="/assets/img/Sprint IV/Sprint 4 - API ADALOVE.jpg">
 
 
-## Sprints Roadmap 
-<img src="/assets/img/Sprint III/Roadmap1-2.jpg">
-<img src="/assets/img/Sprint III/Roadmap2-3.jpg">
-<img src="/assets/img/Sprint III/Roadmap3-4.jpg">
 
 
-## Sprint 3 (atual)
-- [x] Correções de possíveis bugs;
-- [x] Finalização do site.
+## Roadmap 
+<img src="/assets/img/Sprint IV/RoadmapGeral.jpg">
 
-## Sprint 4
-- [ ] Finalização - responsividade;
-- [ ] Banco de dados(formulário).
-- [ ] Debug e finalização.
-      
 ##
 
 # Protótipo Figma:
@@ -67,14 +55,45 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ##
 
 # Tecnologias Utilizadas:
-<img src="/assets/img/Sprint 2/Ferramentas.jpg">
+<div style="display: inline_block"><br>
+ 
+<img align="center" alt="Raphs-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  
+<img align="center" alt="Raphs-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+
+<img align="center" alt="Raphs-Flask" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" >
+
+<img align="center" alt="Raphs-Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+
+<img align="center" alt="Raphs-AWS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg">      
+
+<img align="center" alt="Raphs-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  
+<img align="center" alt="Raphs-MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
+
+<img align="center" alt="Raphs-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+
+<img align="center" alt="Raphs-VsCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
+                    
+<img align="center" alt="Raphs-Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+       
+    
+</div>
+
 
 # Funcionalidades e registros das sprints:
-## Apresentação das funcionalidades:
-Demonstração das funcionalidades na página HTML:
+Demonstração Sprint IV/ Versão Final
 
-Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://youtu.be/DxzPR7kv87s)
+Demonstração PC: [https://youtu.be/BXuAjkixi2U](https://youtu.be/7vTisQebZxs)
 
+Visualização Mobile: [https://youtu.be/n23-EapXdbE](https://youtu.be/n23-EapXdbE)
+
+## 
+
+# Manual de acesso ao projeto! 
+## Acesse o site:
+[Aprenda Scrum](http://aprendascrum.ddns.net:5000/)
+ou cole no navegador: http://aprendascrum.ddns.net:5000/
 
 ##
 
@@ -85,8 +104,8 @@ Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://yout
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Product Owner |   Angelina Borroni         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/borroniff)              |
 | Scrum Master  | Celso Rocha |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/celsick)     |
-| Team Member   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
-|  Team Member  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
-|  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
-|  Team Member  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
+| Dev Team   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
+|  Dev Team  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
+|  Dev Team  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
+| Dev Team  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
 

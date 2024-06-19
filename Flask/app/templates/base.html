@@ -59,10 +59,10 @@
     <footer class="footer-custom">
       <div class="container">
           <span class="display-6 text-right text-white">Referências</span> <br>
-          <a href="https://pt.wikipedia.org/wiki/Scrum" class="btn btn-outline-primary mb-2 mt-2" target="_blank">Wikipédia</a>
-          <a href="https://www.atlassian.com/br/agile/scrum" class="btn btn-outline-primary mb-2 mt-2" target="_blank">Atlassian</a>
-          <a href="https://www.pontotel.com.br/metodologia-scrum/" class="btn btn-outline-primary mb-2 mt-2" target="_blank">Pontotel</a>
-          <a href="https://www.nimblework.com/pt-br/agile/metodologia-scrum/" class="btn btn-outline-primary mb-2 mt-2" target="_blank">Nimblework</a> <br>
+          <a href="https://pt.wikipedia.org/wiki/Scrum" class="btn btn-outline-secondary text-light mb-2 mt-2" target="_blank">Wikipédia</a>
+          <a href="https://www.atlassian.com/br/agile/scrum" class="btn btn-outline-secondary text-light mb-2 mt-2" target="_blank">Atlassian</a>
+          <a href="https://www.pontotel.com.br/metodologia-scrum/" class="btn btn-outline-secondary text-light mb-2 mt-2" target="_blank">Pontotel</a>
+          <a href="https://www.nimblework.com/pt-br/agile/metodologia-scrum/" class="btn btn-outline-secondary text-light mb-2 mt-2" target="_blank">Nimblework</a> <br>
           <a href="#" class="btn btn-outline-secondary disabled mb-2 text-light">O Guia do Scrum, de Ken Schwaber & Jeff Sutherland</a>
           <a href="#" class="btn btn-outline-secondary disabled mb-2 text-light">Scrum: Guia de Referência - Adaptworks Treinamentos</a>
           <h6 class="text-white"><small>© Copyright 2024 Adalove - Todos os direitos reservados</small></h6>
@@ -83,5 +83,24 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Captura o elemento div que contém os inputs de rating
+      const ratingDiv = document.querySelector('.rating');
+  
+      // Adiciona um evento de clique para detectar quando um input é selecionado
+      ratingDiv.addEventListener('click', function(event) {
+          // Verifica se o elemento clicado é um input do tipo radio
+          if (event.target.tagName === 'INPUT' && event.target.type === 'radio') {
+              // Obtém o valor do input selecionado
+              const valorSelecionado = event.target.value;
+  
+              // Exibe o valor selecionado (apenas para verificar)
+              console.log('Valor selecionado:', valorSelecionado);
+  
+              // Aqui você pode enviar o valorSelecionado para onde precisar (por exemplo, enviar para um formulário)
+          }
+      });
+  </script>  
   </body>
 </html>

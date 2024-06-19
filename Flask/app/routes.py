@@ -1,11 +1,58 @@
 from app import app
-from flask import render_template, request
+from flask import render_template, request, session, redirect, url_for
+from flask_mysqldb import MySQL
 
+# Configuração do MySQL
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'ap1'
+app.config['MYSQL_PASSWORD'] = 'Fatec@123'
+app.config['MYSQL_DB'] = 'api1ads'
+mysql = MySQL(app)
+
+#Senha 
+senha = 'metodoscrum1221'
+
+# NavBar
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
+# Rota para adicionar uma nova tarefa MySQL
+@app.route('/add', methods=['POST'])
+def add_task():
+    if request.method == 'POST':
+        func_id = request.form['func_id']
+        nome = request.form['nome']
+        nota = request.form['nota']
+        opiniao = request.form['opiniao']
+
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO formulario (func_id, nome, nota, opiniao) VALUES (%s, %s, %s, %s)", (func_id, nome, nota, opiniao))
+        
+        mysql.connection.commit()
+        cur.close()
+        return redirect(url_for('index'))
+    
+#formulário
+@app.route('/formulario')
+def formulario():
+    func_id = session.get("func_id")
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM formulario")
+    exams = cur.fetchall()
+    cur.close()
+    return render_template('formulario.html', exams=exams)
+
+#Verifica senha
+@app.route('/validate-password', methods=['POST'])
+def validate_password():
+    password = request.form.get('password')
+    if password == senha:
+        return redirect(url_for('formulario'))
+    else:
+        return redirect(url_for('index'))
+    
 @app.route('/modulos')
 def modulos():
     return render_template('modulos.html')
@@ -15,6 +62,10 @@ def testes():
     return render_template('testes.html')
 
 #Módulo 1
+
+@app.route('/mod_1')
+def modulo_1():
+    return render_template('mod_1.html')
 
 questions_1 = [
     {
@@ -79,34 +130,38 @@ questions_1 = [
     },
 ]
 
-@app.route('/mod_1')
-def modulo_1():
-    return render_template('mod_1.html')
-
 @app.route('/mod_1_quiz')
-def modulo_1_quiz():
+def mod_1_quiz():
     return render_template('mod_1_quiz.html', questions=questions_1)
 
 @app.route('/submit_quiz_1', methods=['POST'])
 def submit_quiz_1():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_1:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_1)
     return render_template('mod_1_results.html', score=score, total_questions=total_questions, results=user_answers)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# Módulo 2
 
 @app.route('/mod_2')
 def modulo_2():
     return render_template('mod_2.html')
-
-# Módulo 2
 
 questions_2 = [
     {
@@ -172,25 +227,37 @@ questions_2 = [
 ]
 
 @app.route('/mod_2_quiz')
-def modulo_2_quiz():
+def mod_2_quiz():
     return render_template('mod_2_quiz.html', questions=questions_2)
 
 @app.route('/submit_quiz_2', methods=['POST'])
 def submit_quiz_2():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_2:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_2)
     return render_template('mod_2_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
 # Módulo 3
+
+@app.route('/mod_3')
+def modulo_3():
+    return render_template('mod_3.html')
 
 questions_3 = [
     {
@@ -255,30 +322,38 @@ questions_3 = [
     },
 ]
 
-@app.route('/mod_3')
-def modulo_3():
-    return render_template('mod_3.html')
-
 @app.route('/mod_3_quiz')
-def modulo_3_quiz():
+def mod_3_quiz():
     return render_template('mod_3_quiz.html', questions=questions_3)
 
 @app.route('/submit_quiz_3', methods=['POST'])
 def submit_quiz_3():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_3:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_3)
     return render_template('mod_3_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
 # Módulo 4
+
+@app.route('/mod_4')
+def modulo_4():
+    return render_template('mod_4.html')
 
 questions_4 = [
     {
@@ -343,30 +418,38 @@ questions_4 = [
     },
 ]
 
-@app.route('/mod_4')
-def modulo_4():
-    return render_template('mod_4.html')
+@app.route('/mod_4_quiz')
+def mod_4_quiz():
+    return render_template('mod_4_quiz.html', questions=questions_4)
 
-@app.route('/mod_4_quiz')  #altere apenas o número do seu módulo  )
-def modulo_4_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_4_quiz.html', questions=questions_4)   #altere apenas o número do seu módulo
-
-@app.route('/submit_quiz_4', methods=['POST'])  #altere apenas o número do seu módulo
-def submit_quiz_4():  #altere apenas o número do seu módulo
-    # Lógica para processar o formulário e verificar as respostas
+@app.route('/submit_quiz_4', methods=['POST'])
+def submit_quiz_4():
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_4:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_4)
     return render_template('mod_4_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
  # Módulo 5
+
+@app.route('/mod_5')
+def modulo_5():
+    return render_template('mod_5.html')
 
 questions_5 = [
     {
@@ -430,32 +513,41 @@ questions_5 = [
         'answer': 'd) Planejar o trabalho a ser realizado durante a próxima Sprint.'
     },
 ]
-@app.route('/mod_5')
-def modulo_5():
-    return render_template('mod_5.html')
 
 @app.route('/mod_5_quiz')
-def modulo_5_quiz():
+def mod_5_quiz():
     return render_template('mod_5_quiz.html', questions=questions_5)
 
 @app.route('/submit_quiz_5', methods=['POST'])
 def submit_quiz_5():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_5:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_5)
     return render_template('mod_5_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
+
 #Módulo 6
 
-questions_6 = [ #question_<seu módulo>
+@app.route('/mod_6') #seu módulo normal
+def modulo_6():
+    return render_template('mod_6.html')
+
+questions_6 = [
     {
         'id': 1, #id segue padrão para todas
         'question': '1) Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
@@ -518,31 +610,39 @@ questions_6 = [ #question_<seu módulo>
     },
 ]
 
-@app.route('/mod_6') #seu módulo normal
-def modulo_6():
-    return render_template('mod_6.html')
+@app.route('/mod_6_quiz')
+def mod_6_quiz():
+    return render_template('mod_6_quiz.html', questions=questions_6)
 
-@app.route('/mod_6_quiz')  #altere apenas o número do seu módulo  )
-def modulo_6_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_6_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
-
-@app.route('/submit_quiz_6', methods=['POST'])  #altere apenas o número do seu módulo
-def submit_quiz_6():  #altere apenas o número do seu módulo
-    # Lógica para processar o formulário e verificar as respostas
+@app.route('/submit_quiz_6', methods=['POST'])
+def submit_quiz_6():
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_6:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_6)
-    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers) #altere apenas o número do seu módulo no (mod_x_results.html)
+    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
 
 #Módulo 7
+
+@app.route('/mod_7')
+def modulo_7():
+    return render_template('mod_7.html')
+
 questions_7 = [
         {
         'id': 1,
@@ -606,25 +706,29 @@ questions_7 = [
     },
 ]
 
-@app.route('/mod_7')
-def modulo_7():
-    return render_template('mod_7.html')
-
 @app.route('/mod_7_quiz')
-def modulo_7_quiz():
+def mod_7_quiz():
     return render_template('mod_7_quiz.html', questions=questions_7)
 
 @app.route('/submit_quiz_7', methods=['POST'])
 def submit_quiz_7():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_7:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_7)
     return render_template('mod_7_results.html', score=score, total_questions=total_questions, results=user_answers)
+
+if __name__ == '__main__':
+    app.run(debug=True)
